@@ -16,15 +16,18 @@ const packageJson = require('./package.json')
 export default [
     {
         input: 'src/index.ts',
-        external: Object.keys(packageJson.peerDependencies || {}),
+        external: Object.keys(packageJson.dependencies || {}),
         plugins: [
             peerDepsExternal(),
             resolve(),
             eslint({
                 throwOnError: false,
+                throwOnWarning: false,
             }),
             commonjs(),
-            typescript(),
+            typescript({
+                tsconfig: './tsconfig.json',
+            }),
             json(),
         ],
         output: [

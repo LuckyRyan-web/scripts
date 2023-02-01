@@ -5,6 +5,7 @@
   "author": "ryan-liu",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
   "license": "MIT",
   "devDependencies": {
     "@rollup/plugin-commonjs": "^20.0.0",
