@@ -54,6 +54,7 @@ let handleError = (err: AxiosError) => {
     }
 }
 
+/** 设置报错方法 */
 export function setHandleError(handlerFunc: (err: AxiosError) => void) {
     handleError = handlerFunc
 }
