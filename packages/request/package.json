@@ -1,6 +1,6 @@
 {
   "name": "@ryan-liu/request",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "一个简单的axios封装的请求库",
   "author": "ryan-liu",
   "main": "dist/index.js",
