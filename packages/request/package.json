@@ -46,5 +46,9 @@
   "peerDependencies": {
     "axios": "^1.2.3",
     "qs": "^6.11.0"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org",
+    "access": "public"
   }
 }
